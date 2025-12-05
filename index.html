@@ -3,71 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <title>Convite Thays e Frederico</title>
-
 <style>
     body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
         text-align: center;
+        background: #ffffff;
+        font-family: Arial, sans-serif;
     }
 
-    .fundo {
+    img {
         width: 100%;
-        max-width: 600px;
-        margin: auto;
+        max-width: 500px; /* ajuste para celular */
+        height: auto;
         display: block;
-    }
-
-    .btn {
-        display: block;
-        width: 80%;
-        max-width: 350px;
-        margin: 15px auto;
-        padding: 18px;
-        font-size: 20px;
-        color: #fff;
-        background-color: #4F6F52;
-        text-decoration: none;
-        border-radius: 10px;
-        font-weight: bold;
-    }
-
-    .btn:hover {
-        opacity: 0.85;
+        margin: 0 auto;
     }
 
     .container {
-        padding: 20px 0 40px;
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
     }
+
+    /* Áreas clicáveis responsivas */
+    .link-area {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 42px; /* altura do botão */
+    }
+
+    /* Aqui você ajusta a posição vertical (top) de cada botão */
+    #btn-localizacao { top: 890px; }
+    #btn-confirmar   { top: 945px; }
+    #btn-presentes   { top: 1000px; }
+    #btn-site        { top: 1055px; }
+
 </style>
 </head>
 
 <body>
 
-    <!-- IMAGEM PRINCIPAL DO CONVITE -->
-    <img src="imagem-do-convite.png" class="fundo">
+<div class="container">
+    <img src="convite.png">
 
-    <div class="container">
+    <a id="btn-localizacao" class="link-area"
+       href="https://maps.app.goo.gl/CcJAqpVvp9umBRKN7?g_st=ipc"
+       target="_blank"></a>
 
-        <a class="btn" href="https://maps.app.goo.gl/CcJAqpVvp9umBRKN7?g_st=ipc" target="_blank">
-            📍 LOCALIZAÇÃO
-        </a>
+    <a id="btn-confirmar" class="link-area"
+       href="https://noivos.casar.com/thays-e-frederico#/rsvp"
+       target="_blank"></a>
 
-        <a class="btn" href="https://noivos.casar.com/thays-e-frederico#/rsvp" target="_blank">
-            💌 CONFIRMAR PRESENÇA
-        </a>
+    <a id="btn-presentes" class="link-area"
+       href="https://noivos.casar.com/thays-e-frederico#/presentes"
+       target="_blank"></a>
 
-        <a class="btn" href="https://noivos.casar.com/thays-e-frederico#/presentes" target="_blank">
-            🎁 LISTA DE PRESENTES
-        </a>
-
-        <a class="btn" href="https://noivos.casar.com/thays-e-frederico#/home" target="_blank">
-            🌐 SITE DOS NOIVOS
-        </a>
-
-    </div>
+    <a id="btn-site" class="link-area"
+       href="https://noivos.casar.com/thays-e-frederico#/home"
+       target="_blank"></a>
+</div>
 
 </body>
 </html>
